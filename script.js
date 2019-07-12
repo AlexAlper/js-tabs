@@ -23,7 +23,7 @@ function createTabs(tabHeader, tabHeaderElem, tabContentElem){
 
         info.addEventListener('click', function(e){
             let target = e.target;
-            if(target && target.classList.contains('info-header-tab')){
+            if(target && target.classList.contains(tabHeaderElem)){
                 for(let i = 0; i < tab.length; i++){
                     if(target == tab[i]){
                         hideTabContent(0);
